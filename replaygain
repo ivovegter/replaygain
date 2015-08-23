@@ -93,7 +93,7 @@ gain_general () {
 # These
 gain_mp3 () {
     #   gain_general mp3 "mp3gain -k -p" "-r" "-a";
-    gain_general mp3 "mp3gain -k -p -s i";
+    gain_general mp3 "mp3gain -k -p";
 }
 
 gain_ogg () {
@@ -109,8 +109,8 @@ gain_wv () {
 }
 
 gain_aac () {
-    gain_general aac "aacgain -k -p -s i";
-    gain_general mp4 "aacgain -k -p -s i";
+    gain_general aac "aacgain -k -p";
+    gain_general mp4 "aacgain -k -p";
 }
 
 
