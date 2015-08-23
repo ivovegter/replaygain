@@ -73,10 +73,11 @@ gain_general () {
     return;
   }
 
-  local gain_opt="$gain_track_opt"
-  if [ -f "ALBUMGAIN" ]; then
-    local gain_opt="$gain_album_opt"
-  fi
+  # local gain_opt="$gain_track_opt"
+  # if [ -f "ALBUMGAIN" ]; then
+  #   local gain_opt="$gain_album_opt"
+  # fi
+  local gain_opt="$gain_album_opt"
 
   echo "Running $gain_command $gain_opt *.$gain_extension in $(pwd)"
   $gain_command $gain_opt *.$gain_extension || {
