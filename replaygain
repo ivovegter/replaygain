@@ -109,8 +109,8 @@ gain_wv () {
 }
 
 gain_aac () {
-    gain_general aac "aacgain -k -p" "-r" "-a";
-    gain_general mp4 "aacgain -k -p" "-r" "-a";
+    gain_general aac "aacgain -k -p";
+    gain_general mp4 "aacgain -k -p";
 }
 
 
